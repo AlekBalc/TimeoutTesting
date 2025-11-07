@@ -1,0 +1,23 @@
+{
+  "name": "timeouttesting",
+  "version": "1.0.0",
+  "description": "a repository to host a simple one endpoint app",
+  "homepage": "https://github.com/AlekBalc/TimeoutTesting#readme",
+  "bugs": {
+    "url": "https://github.com/AlekBalc/TimeoutTesting/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlekBalc/TimeoutTesting.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
