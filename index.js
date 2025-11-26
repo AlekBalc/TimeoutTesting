@@ -4,10 +4,12 @@ const app = express();
 const port = 3000;
 
 app.all("/airport/{*splat}", async (req, res) => {
+  console.log("Airport endpoint hit");
   res.json(airportData);
 });
 
 app.all("/{*splat}", async (req, res) => {
+  console.log("Timouet endpoint hit");
   const duration = 1000 * 60 * 6; // 6 minutes
   await new Promise((resolve) => setTimeout(resolve, duration));
   res.send("Hello World!");
