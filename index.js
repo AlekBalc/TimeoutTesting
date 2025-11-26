@@ -1,6 +1,11 @@
 import express from "express";
+import { airportData } from "./airport.js";
 const app = express();
 const port = 3000;
+
+app.all("/airport/{*splat}", async (req, res) => {
+  res.json(airportData);
+});
 
 app.all("/{*splat}", async (req, res) => {
   const duration = 1000 * 60 * 6; // 6 minutes
